@@ -1,4 +1,9 @@
 var nome = prompt("qual è il tuo nome?")
 var cognome = prompt("qual è il tuo cognome?")
 var colore = prompt("qual è il tuo colore preferito?")
-document.getElementById('pass').innerHTML = nome + cognome + colore + 20;
+//document.getElementById('pass').innerHTML = nome + cognome + colore + 20;
+var data = new Date();
+var annoCorrente = data.getFullYear();
+//document.getElementById('pass').innerHTML = nome + cognome + colore + annoCorrente;
+//document.getElementById('pass').innerHTML = nome + ";" + cognome + ";" + colore + ";" + annoCorrente;
+document.getElementById('pass').innerHTML = nome + ";" + cognome + ";" + colore + ";" + ( annoCorrente - 2000 );
